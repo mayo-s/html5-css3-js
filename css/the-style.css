@@ -1,0 +1,260 @@
+
+body{
+    background-image:url(../img/CityscapeBerlin2b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+}
+
+#top, #logo { 
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+#content {
+    background-color: rgba(245,245,245, 0.8);
+    margin-left: 5%;
+    margin-right: 10%;
+    padding: 5%;
+    box-shadow: 0 0 4px 3px rgba(176,173,176,1);
+}
+
+nav li{
+    margin-right: 3em;
+    display: inline;       
+}
+
+section li{
+    display: block;
+    margin: 3em;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+dl dt{
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+p{
+    margin-top: 3em;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Formular */
+
+form {
+  width: 60%;
+  padding-top: 3%;
+  position: relative;
+}
+input {
+  margin: 0 0 1em 31%;
+  padding: .2em .5em;
+  width: 60%;
+  background-color: #fffbf0; 
+  border: 1px solid #e7c157;  
+}
+label { 
+  text-align: right;
+  line-height: 1.5;
+  width: 30%;
+  position: absolute;
+  left: 0;
+}
+label::after {
+  content: ": ";
+}
+button {
+  margin-left: 31%;
+  width: 15%
+}
+input:required + label::before {
+  position: absolute;
+  left: 300%;
+  content: "★";
+  color: red;
+}
+input:required:valid + label::before {
+  content: "✔";
+  color: green;
+}
+
+/* Footer */
+
+footer {
+    bottom: 0em;
+    margin-left: auto;
+	margin-right: auto;
+    
+}
+/*Pseudos und IDs */
+
+a:hover{
+    text-decoration: underline;
+}
+a,a:visited {
+    color:dimgray;
+}
+
+
+.us, h2 {
+    clear: both;
+}
+
+
+.fakten ul li{
+    margin: 0em;
+    margin-top: 1em;
+    border-style: none;
+}
+
+.leftimg {
+    float: left;
+    margin: 5px 40px 40px 0;
+}
+
+.rightimg {
+    float: right;
+    margin: 5px 0 40px 40px;
+}
+
+.about { 
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2em;
+    }
+
+.pics {  
+    width: 30%;
+    display: inline-block;
+}
+
+#rps{
+	visibility: hidden;
+	padding-top: 3%;
+	padding-left: 10%;
+}   
+   
+@media screen and (min-width: 791px) and (max-width: 1070px){
+
+	nav li {
+		display: inline-block;
+	}
+	
+	img{
+		width: 30%;
+		height: 30%;
+	}
+
+	header img {
+		height: 5em;
+		width: 7em;
+	}
+	
+}
+
+   
+@media screen and (max-width:790px){
+	
+body{
+    background-image:url(../img/berliner-fernsehturm2.jpg);
+}
+
+img{
+	width: 50%;
+	height: 50%;
+	
+}
+
+header img {
+    height: 3em;
+	width: 5em;
+}
+
+#content {
+    background-color: rgba(245,245,245, 0.8);
+}
+
+h1, #logo {
+    display: inline;
+}
+    
+
+
+nav li {
+    display: block;
+}
+
+.pics {  
+    width: 40%;
+    float:left;
+   /* margin: 4%;*/
+}
+
+/* Formular */
+
+form {
+  width: 80%;
+  padding-top: 3%;
+  position: relative;
+}
+
+input {
+  margin: 0 0 1em 31%;
+  padding: .2% .5e%;
+  width: 60%;
+  background-color: #fffbf0; 
+  border: 1px solid #e7c157;  
+}
+
+label { 
+  text-align: right;
+  line-height: 1.5;
+  width: 30%;
+  position: absolute;
+  left: 0;
+}
+
+label::after {
+  content: ": ";
+}
+
+button {
+  margin-left: 30%;
+  width: 19%
+}
+
+input:required + label::before {
+  position: absolute;
+  left: 300%;
+  content: "★";
+  color: red;
+}
+
+input:required:valid + label::before {
+  content: "✔";
+  color: green;
+}
+
+/*ul li {
+    display: block;
+}*/
+
+footer {
+    bottom: 0em;
+    margin-left: 5em;
+    
+}
+	
+
+
+}
